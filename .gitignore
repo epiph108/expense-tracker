@@ -1,0 +1,21 @@
+# Virtual environment
+venv/
+env/
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+
+# Database file — don't push this to GitHub
+*.db
+
+# VS Code settings
+.vscode/
+
+# Environment variables (when you add them later)
+.env
+
+# OS files
+.DS_Store
+Thumbs.db
