@@ -4,8 +4,7 @@ from sqlalchemy.orm import sessionmaker, DeclarativeBase
 DATABSE_URL = "sqlite://./expenses.db"
 
 engine = create_engine(DATABSE_URL, connect_args = {"check_same_thread" : False})
-SessionLocal = sessionmaker(bind=engine, autocommit = False, auto = False)
-
+SessionLocal = sessionmaker(bind=engine, autocommit = False, autoflush = False)
 
 class Base(DeclarativeBase):
   pass
