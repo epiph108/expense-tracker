@@ -10,4 +10,4 @@ class Expense(Base):
   amount = Column(Float, nullable=False)
   note = Column(String, nullable=True)
 
-category_id = Column(Integer, ForeignKey('categories.id', nullable=False))
+category_id = Column(Integer, ForeignKey('categories.id', nullable=False))  
